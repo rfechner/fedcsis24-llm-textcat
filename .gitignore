@@ -1,0 +1,35 @@
+# ignore everything inside the data directory, keep the jupyter notebook used to
+# preprocess the dataset
+data/raw/*
+data/binary/*
+data/description2wz08/*
+data/fulltext2wz08/*
+
+# ignore outputs of experiments. Those are too big to be pushed.
+experiments/*
+
+*.zip
+*.pkl
+*.pyc
+
+*.spacy
+*.arrow
+
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# singularity image files
+*.sif
+
+out/*
+
+# do not ignore the specific file out/jp2wz08
+!out/jp2wz08/aya\:8b
+!out/jp2wz08/gemma\:7b
+!out/jp2wz08/llama3
+!out/jp2wz08/llama3\:70b
+!out/jp2wz08/phi3\:3.8b
+!out/jp2wz08/command-r
+
